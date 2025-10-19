@@ -379,7 +379,7 @@ export default function ChatbotApp() {
   }
 
   function handleClear() {
-    setMessages([{ from: "bot", text: "Conversa reiniciada. O que manda?" }]);
+    setMessages([{ from: "bot", text: "Pronto pra próxima" }]);
     try { localStorage.removeItem("chat_messages_v1"); } catch (e) {}
   }
 
@@ -388,10 +388,10 @@ export default function ChatbotApp() {
       <div style={styles.card}>
         <header style={styles.header}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <div style={styles.logo}>G</div>
+            <div style={styles.logo}>🤖</div>
             <div>
-              <div style={styles.title}>Groove Chat</div>
-              <div style={styles.subtitle}>Client-only — roda no seu navegador</div>
+              <div style={styles.title}>Groove Bot</div>
+              <div style={styles.subtitle}>Bot programado por Rodrigo Marafon</div>
             </div>
           </div>
           <div style={{ display: "flex", gap: 8, alignItems: "center" }}>
@@ -428,7 +428,7 @@ export default function ChatbotApp() {
           <button type="submit" style={styles.sendBtn}>Enviar</button>
         </form>
 
-        <footer style={styles.footer}>Dica: customize <code>knowledgeBase</code> no topo para respostas fixas.</footer>
+        <footer style={styles.footer}>Chama no WhatsApp <code>41 98409-7415</code> pra pedir o seu bot personalizado.</footer>
       </div>
     </div>
   );
