@@ -27,9 +27,9 @@ export default function ChatbotApp() {
   const [messages, setMessages] = useState(() => {
     try {
       const raw = localStorage.getItem("chat_messages_v1");
-      return raw ? JSON.parse(raw) : [{ from: "bot", text: "Fala, sou o GrooveBot. Como posso ajudar hoje?" }];
+      return raw ? JSON.parse(raw) : [{ from: "bot", text: "Oi sou o Rodrigo, pergunte algo sobre mim" }];
     } catch (e) {
-      return [{ from: "bot", text: "Fala, sou o GrooveBot. Como posso ajudar hoje?" }];
+      return [{ from: "bot", text: "Olá, sou o Rodrigo, pergunte algo sobre mim" }];
     }
   });
   const [input, setInput] = useState("");
@@ -80,7 +80,7 @@ export default function ChatbotApp() {
     },
     {
       patterns: ["gosta de comer o que", "qual sua comida favorita", "comida favorita", "prato favorito", "qual é sua comida favorita", "comida que mais gosta"],
-      reply: "Feijão",
+      reply: "Pizza",
     },
     {
       patterns: ["seu filme favorito", "qual seu filme favorito", "filme favorito", "qual é seu filme favorito", "qual e seu filme favorito"],
@@ -293,7 +293,7 @@ export default function ChatbotApp() {
     {
       patterns: ["qual é o seu gênero de série favorito", "qual e o seu gênero de série favorito", "genero de série favorito"],
       reply: "Animes",
-    },
+    },  
   ];
 
   const fallbackReplies = [
