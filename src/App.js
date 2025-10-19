@@ -422,7 +422,7 @@ export default function ChatbotApp() {
           <input
             value={input}
             onChange={(e) => setInput(e.target.value)}
-            placeholder="Escreve aí... (ex: 'me mostra um script de spawn')"
+            placeholder="Digite aqui sua mensagem..."
             style={styles.input}
           />
           <button type="submit" style={styles.sendBtn}>Enviar</button>
@@ -486,6 +486,6 @@ const styles = {
   msgText: { whiteSpace: "pre-wrap", lineHeight: 1.4 },
   inputRow: { padding: 12, display: "flex", gap: 8, borderTop: "1px solid rgba(255,255,255,0.03)" },
   input: { flex: 1, padding: "10px 12px", borderRadius: 10, border: "1px solid rgba(255,255,255,0.04)", background: "rgba(255,255,255,0.02)", color: "#e6eef8", outline: "none" },
-  sendBtn: { padding: "10px 14px", borderRadius: 10, border: "none", background: "linear-gradient(90deg,#6ee7b7,#3b82f6)", color: "#052029", fontWeight: 700, cursor: "pointer" },
+  sendBtn: { padding: "10px 14px", borderRadius: 10, border: "none", background: "linear-gradient(90deg,#6ee7b7,#3b82f6)", color: "#052d9dff", fontWeight: 700, cursor: "pointer" },
   footer: { padding: 10, fontSize: 12, color: "#9fb0d6", borderTop: "1px solid rgba(255,255,255,0.01)" },
 };
