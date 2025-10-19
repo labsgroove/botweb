@@ -72,7 +72,7 @@ export default function ChatbotApp() {
     },
     {
       patterns: ["do que você gosta", "quais seus hobbies", "o que voce gosta de fazer", "hobbies", "gosta de fazer o que", "passatempo", "passatempo favorito"],
-      reply: "Jogar videogame, assistir séries e filmes e jogar videogame.",
+      reply: "Jogar videogame, assistir séries ou filmes e jogar videogame.",
     },
     {
       patterns: ["qual é seu sonho", "qual é seu sonho", "qual e seu sonho", "qual e seu sonho", "o que mais deseja na vida", "sonho da vida", "maior sonho"],
