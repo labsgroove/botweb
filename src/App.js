@@ -39,12 +39,12 @@ export default function ChatbotApp() {
   // Simple knowledge base — edit or extend
   const knowledgeBase = [
     {
-      patterns: ["olá", "oi", "eae", "opa", "bom dia", "boa tarde", "boa noite"],
+      patterns: ["olá", "oi", "eae", "opa", "bom dia", "boa tarde", "boa noite", "fala", "fala aí", "fala ai", "fala ae", "salve", "salveee"],
       reply: "Oi",
     },
     {
-      patterns: ["quem é você", "seu nome", "quem voce", "como voce se chama", "qual seu nome"],
-      reply: "Sou o Rodrigo",
+      patterns: ["quem é você", "seu nome", "quem voce", "como voce se chama", "qual seu nome", "qual é seu nome", "qual e seu nome"],
+      reply: "Me chamo Rodrigo",
     },
     {
       patterns: ["onde voce mora", "onde voce vive", "qual seu endereco", "qual seu endereço", "mora onde", "você mora onde", "voce mora onde"],
@@ -67,39 +67,39 @@ export default function ChatbotApp() {
       reply: "Aqui está um exemplo básico de script de teleporte:\n\n```lua\n-- Exemplo de script de teleporte em Lua\nfunction teleportPlayer(player, x, y, z)\n  player:setPosition(x, y, z) -- Define a nova posição do jogador\nend\n\n-- Teleporta o jogador para as coordenadas (500, 600, 700)\nteleportPlayer(currentPlayer, 500, 600, 700)\n```",
     },
     {
-      patterns: ["onde trabalhou antes", "trabalhos anteriores", "empregos anteriores", "onde voce trabalhou"],
+      patterns: ["onde trabalhou antes", "trabalhos anteriores", "empregos anteriores", "onde voce trabalhou", "onde você trabalhou"],
       reply: "De marceneiro a operador de empilhadeira, passando por vendedor e até motorista de aplicativo.",
     },
     {
-      patterns: ["do que você gosta", "quais seus hobbies", "o que voce gosta de fazer", "hobbies", "gosta de fazer o que", "passatempo"],
+      patterns: ["do que você gosta", "quais seus hobbies", "o que voce gosta de fazer", "hobbies", "gosta de fazer o que", "passatempo", "passatempo favorito"],
       reply: "Jogar videogame, assistir séries e filmes e jogar videogame.",
     },
     {
-      patterns: ["qual é seu sonho", "qual é seu sonho", "qual e seu sonho", "qual e seu sonho", "o que mais deseja na vida", "sonho da vida"],
+      patterns: ["qual é seu sonho", "qual é seu sonho", "qual e seu sonho", "qual e seu sonho", "o que mais deseja na vida", "sonho da vida", "maior sonho"],
       reply: "Ganhar na loteria e me aposentar.",
     },
     {
-      patterns: ["gosta de comer o que", "qual sua comida favorita", "comida favorita", "prato favorito"],
+      patterns: ["gosta de comer o que", "qual sua comida favorita", "comida favorita", "prato favorito", "qual é sua comida favorita", "comida que mais gosta"],
       reply: "Feijão",
     },
     {
-      patterns: ["seu filme favorito", "qual seu filme favorito", "filme favorito"],
+      patterns: ["seu filme favorito", "qual seu filme favorito", "filme favorito", "qual é seu filme favorito", "qual e seu filme favorito"],
       reply: "MIB - Homens de Preto",
     },
     {
-      patterns: ["serie favorita", "sua serie favorita", "qual sua serie favorita", "qual sua série favorita"],
+      patterns: ["serie favorita", "sua serie favorita", "qual sua serie favorita", "qual sua série favorita", "qual é sua serie favorita", "qual é sua série favorita", "qual e sua serie favorita", "qual e sua série favorita"],
       reply: "Rick and Morty",
     },
     {
-      patterns: ["Quem é seu melhor amigo", "qual é seu melhor amigo", "melhor amigo"],
+      patterns: ["Quem é seu melhor amigo", "qual é seu melhor amigo", "melhor amigo", "melhor amiga", "quem é seu melhor amigo", "quem é sua melhor amiga"],
       reply: "Chiquinho",
     },
     {
-      patterns: ["Me fala um pouco sobre você.", "Fala mais sobre você.", "Fala mais sobre voce."],
+      patterns: ["Me fala um pouco sobre você", "Fala mais sobre você", "Fala mais sobre voce"],
       reply: "Sou o Rodrigo, gosto de videogames, fico perturbando o ChatGPT o dia todo e quero ser programador um dia.",
     },
     {
-      patterns: ["perfil profissional", "profissional", "perfil", "qual seu perfil profissional", "qual é seu perfil profissional"],
+      patterns: ["perfil profissional", "profissional", "perfil", "qual seu perfil profissional", "qual é seu perfil profissional", "qual e seu perfil profissional"],
       reply: "Sou reservado, sincero e perfeccionista.",
     },
     {
@@ -297,9 +297,10 @@ export default function ChatbotApp() {
   ];
 
   const fallbackReplies = [
-    "Hum... não peguei. Explica de outro jeito?",
-    "Curti a pergunta, mas não sei disso ainda. Quer que eu chute?",
-    "Boa pergunta — posso sugerir um caminho pra solução se você der mais detalhes.",
+    "Sou só um bot simples, pode reformular?",
+    "Não tenho certeza sobre isso, pode perguntar outra coisa?",
+    "Não estou programado para responder isso ainda.",
+    "Tente perguntar de outra forma.",
   ];
 
   useEffect(() => {
