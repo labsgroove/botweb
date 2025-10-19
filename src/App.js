@@ -115,7 +115,7 @@ export default function ChatbotApp() {
       reply: "Crescimento profissional, aprendizado constante e um bom ambiente de trabalho.",
     },
     {
-      patterns: ["quais são seus objetivos profissionais", "quais sao seus objetivos profissionais", "quais seus objetivos profissionais", "quais são seus objetivos profissionais", "quais sao seus objetivos profissionais", "quais seus objetivos profissionais"],
+      patterns: ["objetivos profissionais", "quais sao seus objetivos profissionais", "quais seus objetivos profissionais", "quais são seus objetivos profissionais", "quais sao seus objetivos profissionais", "quais seus objetivos profissionais"],
       reply: "Me tornar um desenvolvedor full-stack e contribuir para projetos inovadores.",
     },
     {
